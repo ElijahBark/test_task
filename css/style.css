@@ -378,7 +378,11 @@ html {
     box-shadow: 0 0 0.7rem 0 #1da7c0;
 }
 
-input:-webkit-autofill, input:-webkit-autofill:focus {
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 9999px white;
+}
+
+input:-webkit-autofill:focus {
     -webkit-box-shadow: inset 0 0 0 9999px white,
     0 0 0.7rem 0 #1da7c0;
 }

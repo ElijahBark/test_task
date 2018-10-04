@@ -10,6 +10,9 @@ $(document).ready(function () {
         $('.footer').animate({
             width: '55%',
         }, 500)
+        $('.footer__menu').animate({
+            width: '65%',
+        }, 500)
     });
 
 
