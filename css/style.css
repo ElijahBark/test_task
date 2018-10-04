@@ -49,8 +49,11 @@ html {
     border-left: 15px solid #fc5095;
     position: absolute;
     right: 0;
-    width: 25%;
     height: 100vh;
+}
+
+.aside-start {
+    width: 25%;
     box-shadow: -100px 0 750px 300px rgba(252, 80, 149, 0.2);
 }
 
@@ -117,7 +120,7 @@ html {
 .aside__info-button {
     margin-top: 3rem;
     display: inline-block;
-    border-radius: 18px;
+    border-radius: 1.8rem;
     background-color: #fc5095;
     padding: 25px 55px;
     color: #ffffff;
@@ -131,7 +134,7 @@ html {
     background-color: #f6f5f5;
     width: 45%;
     border-color: #fc8950;
-    box-shadow: -100px 0 400px 300px rgba(252, 137, 80, 0.0);
+    box-shadow: -100px 0 400px 300px rgba(252, 137, 80, 0.2);
     right: -120%;
     z-index: 6;
 }
@@ -163,7 +166,7 @@ html {
     font-size: 2.6rem;
     padding: 2.5rem 0;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     border: 2px solid #dfdede;
     margin-bottom: 1.5rem;
     color: #3b3b3b;
@@ -189,6 +192,132 @@ html {
     width: 30%;
     text-align: center;
 }
+
+.aside-reg-form {
+    width: 45%;
+    box-sizing: border-box;
+    border-color: #1da7c0;
+    background-color: #f6f5f5;
+    box-shadow: -100px 0 400px 300px rgba(29, 167, 192, 0.2);
+}
+
+.aside-reg-form::before {
+    background-color: #1da7c0;
+}
+
+.aside-reg-form__main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-reg-form__info::before {
+    color: #1da7c0;
+    border-color: #1da7c0;
+}
+
+.aside-reg-form__title {
+    color: #1da7c0;
+    margin-bottom: 5rem;
+}
+
+.aside-reg-form__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-reg-form__radio {
+    display: none;
+}
+
+.aside-reg-form__radio-label {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 48%;
+    text-align: center;
+    color: #3b3b3b;
+    border-radius: 0.8rem;
+    background-color: #fff;
+    border: 2px solid #d3d3d3;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.aside-reg-form__radio:checked+.aside-reg-form__radio-label {
+    background-color: #1da7c0;
+    color: white;
+}
+.aside-reg-form__field-label {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #3b3b3b;
+    margin-bottom: 0.5rem;
+}
+.aside-reg-form__field {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    border-radius: 0.8rem;
+    border: 2px solid #d3d3d3;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.aside-reg-form__checkbox {
+    display: none;
+}
+
+.aside-reg-form__checkbox-label {
+    font-size: 1.35rem;
+    margin-left: 2.5rem;
+    color: #3d3d3d;
+    position: relative;
+    margin-bottom: 1.8rem;
+
+}
+
+.aside-reg-form__checkbox-label::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #3d3d3d;
+    border-radius: 0.25rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top: 0;
+    left: -2.5rem;
+    background-color: white;
+}
+
+.aside-reg-form__checkbox:checked + .aside-reg-form__checkbox-label::after {
+    content: '';
+    width: 0.8rem;
+    height: 0.2rem;
+    border: 1px solid #3d3d3d;
+    border-right: none;
+    border-top: none;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -2.1rem;
+    top: 0.5rem;
+}
+
+.aside-reg-form__confirm-button {
+    width: 70%;
+    padding: 3rem;
+    border-radius: 1.8rem;
+    border: 2px solid #1da7c0;
+    background-color: #ffffff;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: #aaa9a9;
+
+}
+
 
 .first-check-result {
     display: none;
@@ -224,13 +353,33 @@ html {
     font-weight: 800;
 }
 
-@media (max-width: 1850px) {
+@media (max-width: 2050px) {
     html {
         font-size: 8px;
     }
 
     .aside__check-button {
         border-width: 1px;
+    }
+    .aside-reg-form__field {
+        border-width: 1px;
+    }
+    .aside-reg-form__radio-label {
+        border-width: 1px;
+    }
+
+    .aside-reg-form__checkbox-label::before {
+        border-width: 1px;
+    }
+
+    .aside-reg-form__confirm-button {
+        border-width: 1px;
+    }
+}
+
+@media (max-width: 1830px) {
+    html {
+        font-size: 7px;
     }
 }
 

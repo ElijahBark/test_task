@@ -1,10 +1,14 @@
 $('#button-start').click(function () {
     $('.aside-first-check').animate({
         right: 0,
-    }, 500);
+    }, 500,function () {
+        $('.aside-start').css({
+            display:'none'
+        })
+    });
     $('.footer').animate({
         width: '55%',
-    }, 400)
+    }, 500)
 });
 
 $('.aside__check-button').click(function (e) {

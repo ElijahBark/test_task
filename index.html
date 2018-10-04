@@ -26,7 +26,7 @@
             </ul>
         </footer>
     </section>
-    <aside class="aside.active">
+    <aside class="aside aside-start">
         <div class="aside__info">
             <h2 class="aside__info-title">Lorem ipsum.</h2>
             <p class="aside__info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
@@ -39,10 +39,35 @@
         <div class="aside__info aside-first-check__info">
             <h2 class="aside__info-title aside-first-check__info-title">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Cupiditate, ratione?</h2>
-            <a href="#" class="aside__check-button" id="button-check_a" data-letter='А.' data-perc="20%">Вариант А</a>
-            <a href="#" class="aside__check-button" id="button-check_b" data-letter='Б.' data-perc="30%">Вариант Б</a>
-            <a href="#" class="aside__check-button" id="button-check_c" data-letter='В.' data-perc="50%">Вариант В</a>
+            <a href="#" class="aside__check-button" data-letter='А.' data-perc="20%">Вариант А</a>
+            <a href="#" class="aside__check-button" data-letter='Б.' data-perc="30%">Вариант Б</a>
+            <a href="#" class="aside__check-button" data-letter='В.' data-perc="50%">Вариант В</a>
             <a href="#" class="aside__next-button" id="first-check-continue">Продолжить</a>
+        </div>
+    </aside>
+    <aside class="aside aside-reg-form">
+        <div class="aside__info aside-reg-form__info">
+            <h2 class="aside__info-title aside-reg-form__title">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Cupiditate, ratione?</h2>
+            <form class="aside-reg-form__main" action="#">
+                <p class="aside-reg-form__field-label">Я ищу:</p>
+                <div class="aside-reg-form__buttons">
+                    <input type="radio" name="radio" class="aside-reg-form__radio" id="first-var">
+                    <label for="first-var" class="aside-reg-form__radio-label">Вариант 1</label>
+                    <input type="radio" name="radio" class="aside-reg-form__radio" id="second-var">
+                    <label for="second-var"  class="aside-reg-form__radio-label">Вариант 2</label>
+                </div>
+                <label for="user-name" class="aside-reg-form__field-label">Ваше имя:</label>
+                <input type="text" class="aside-reg-form__field" id="user-name">
+                <label for="email" class="aside-reg-form__field-label">Email:</label>
+                <input type="email" class="aside-reg-form__field" id="email">
+                <label for="password" class="aside-reg-form__field-label">Придумайте пароль:</label>
+                <input type="password" class="aside-reg-form__field" id="password">
+                <input type="checkbox" class="aside-reg-form__checkbox" id="confirm">
+                <label for="confirm" class="aside-reg-form__checkbox-label">Регистрируясь, вы подтверждаете, что вам уже исполнилось
+                    18 лет и вы ознакомились с условиями пользования сайтом.</label>
+                <button type="submit" class="aside-reg-form__confirm-button">Продолжить</button>
+            </form>
         </div>
     </aside>
     <div class="first-check-result">
@@ -51,6 +76,7 @@
             <p class="first-check-result__text"></p>
         </div>
     </div>
+
 
 
 </div>
