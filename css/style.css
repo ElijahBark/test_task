@@ -239,8 +239,8 @@ html {
 .aside-reg-form__radio-label {
     display: inline-block;
     box-sizing: border-box;
-    width: 48%;
     text-align: center;
+    width: 48%;
     color: #3b3b3b;
     border-radius: 0.8rem;
     background-color: #fff;
@@ -248,12 +248,46 @@ html {
     font-size: 2.4rem;
     font-weight: 600;
     padding: 2.5rem;
+    padding-left: 5.5rem;
     margin-bottom: 1.5rem;
+    position: relative;
 }
 .aside-reg-form__radio:checked+.aside-reg-form__radio-label {
     background-color: #1da7c0;
     color: white;
 }
+
+.aside-reg-form__radio:checked+.aside-reg-form__radio-label:before {
+    background-image: url(../img/white-male.png);
+}
+.aside-reg-form__radio:checked+.aside-reg-form__radio-label:last-of-type:before {
+    background-image: url(../img/white-female.png);
+}
+
+.aside-reg-form__radio-label:before {
+    content: '';
+    background-image: url("../img/black-male.png");
+    background-size: cover;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    left: 4.5rem;
+    top: 50% ;
+    transform: translate(0, -50%);
+}
+
+.aside-reg-form__radio-label:last-of-type:before {
+    background-image: url("../img/black-female.png");
+}
+
+.aside-reg-form__radio:checked+.aside-reg-form__radio-label:before {
+    background-image: url(../img/white-male.png);
+}
+.aside-reg-form__radio:checked+.aside-reg-form__radio-label:last-of-type:before {
+    background-image: url(../img/white-female.png);
+}
+
 .aside-reg-form__field-label {
     font-size: 1.8rem;
     font-weight: 600;
