@@ -18,7 +18,6 @@ time, mark, audio, video, button {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -38,7 +37,6 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
     content: none;
 }
 table {
@@ -47,4 +45,9 @@ table {
 }
 a {
     text-decoration: none;
+}
+
+input, button {
+    outline: none;
+    background-color: white;
 }
